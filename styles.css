@@ -1,0 +1,116 @@
+html {
+  margin: none;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -300px;
+  margin-left: -250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  max-width: 500px;
+  border: 3px solid black;
+  padding: 5px;
+  background: rgba(165, 169, 192, 0.747);
+  box-shadow: 0 0 20px 2px black;
+}
+
+/* @media (max-width: 450px) {
+  #container * {
+    transform: scale(0.5);
+  }
+} */
+
+@media (max-width: 1000px) {
+  #container {
+    margin-left: -160px;
+    min-width: 300px;
+  }
+}
+
+h1 {
+  font-size: 3rem;
+  border-bottom: 2px solid gray;
+  text-align: center;
+}
+
+label {
+  font-size: 2rem;
+  font-weight: 900;
+  padding: 1rem 0;
+}
+
+input {
+  height: 2rem;
+  font-size: 1.5rem;
+}
+
+#button-container {
+  border-bottom: 3px solid gray;
+  text-align: center;
+}
+
+#submit {
+  background-color: rgba(1, 25, 165, 0.747);
+  border: none;
+  border-radius: 2rem;
+  height: 3rem;
+  width: 15rem;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 2rem 0;
+  cursor: pointer;
+}
+
+#clear {
+  background-color: rgba(179, 1, 1, 0.747);
+  border: none;
+  border-radius: 2rem;
+  height: 3rem;
+  width: 10rem;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 2rem 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+#heading {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+#bmi-output {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+#message {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
